@@ -6,13 +6,17 @@ console.log(document.querySelector("h1").innerText);
 
 
 
-function changeText() {
-    setTimeout(function () {
-        document.querySelector("h1").innerText = "Goodbye";
-      },0);
-    document.body.style.backgroundColor = "red";
-    // underline the h1 element
-    document.querySelector("h1").style.textDecoration = "underline";
-    // change the color of the h1 element
-    document.querySelector("h1").style.color = "blue";
-}
+// function changeText() {
+//     setTimeout(function () {
+//         document.querySelector("h1").innerText = "Goodbye";
+//       },0);
+//     document.body.style.backgroundColor = "red";
+//     // underline the h1 element
+//     document.querySelector("h1").style.textDecoration = "underline";
+//     // change the color of the h1 element
+//     document.querySelector("h1").style.color = "blue";
+// }
+
+setTimeout(function () {
+  document.querySelector(".box").getElementsByClassName("heading")[0].innerText = "Wassup World";
+}, 5000);
